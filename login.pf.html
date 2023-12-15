@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="stylesheet" href="css/login.css" class="rel">
+    <link rel="icon" type="images/png" href="">
+</head>
+<body background="Media/bgi/theme4.jpg">
+    <header>
+        <img class="img1" src="Media/logos/Muscle+&+Fitness+Logo.png" alt=""  width='150px'>
+        <nav class="navigation">
+            <a href="main.html" class="home" target="_self">Home</a>
+            <a href="bmi calculator/Bmi.html" class="fitness tracker">Fitness Tracker</a>
+            <a href="workout plans.html" class="workout plans">Workout Planner</a>
+            <a href="contacts.pf.html" class="contacts">Contacts</a>
+            <button class="login-btn" onclick="location.href='register.pf.html'">Sign Up</button>
+        </nav>
+        <div class="nav2">
+            <a href="main.html" class="home">Home</a><br>
+            <a href="bmi calculator/Bmi.html" class="fitness tracker">Fitness Tracker</a><br>
+            <a href="workout plans.html" class="workout plans">Workout Planner</a><br>
+            <a href="contacts.pf.html" class="contacts">Contacts</a><br>
+            <button class="login-btn"
+                onclick="location.href='register.pf.html'">
+                Sign Up
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close" onclick="location.href='index.html'"></ion-icon></span>
+            <div class="form-box-login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="mail"></ion-icon>
+                        </span>
+                        <input type="email" required ="email" id="email">
+                        <label>Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="lock-closed"></ion-icon>
+                        </span>
+                        <input type="password" name="password" minlength="8" maxlength="12" required id="password">
+                        <label>Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <!------button----------------------------------->
+                    <button type="submit"  class="submit-btn" onclick="showAlert()">LOGIN</button>
+                    <script>
+                        function showAlert(){
+                            alert("login successfully");
+                        }
+                    </script>
+                    <div class="login-register">
+                        <p>Don't have an account?
+                        <a href="register.pf.html" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
